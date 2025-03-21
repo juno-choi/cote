@@ -7,16 +7,41 @@ package kr.co.simol.dfs.m43165;
 public class Solution {
     static int answer;
     public int solution(int[] numbers, int target) {
-        //dfs 탐색을 통하여 문제를 풀이해야함...
-        dfs(0,0,numbers,target);
-        return answer;
+        Calculator calculator = new Calculator();
+        calculator.updateData(numbers, target);
+        calculator.dfs(0, 0);
+        return calculator.getAnswer();
     }
-    public void dfs(int level, int sum, int[] numbers, int target){
-        if(level == numbers.length){
-            if(sum == target) answer++;
-        }else{
-            dfs(level+1, sum+numbers[level], numbers, target);
-            dfs(level+1, sum-numbers[level], numbers, target);
+
+}
+
+class Calculator{
+    private int answer;
+    private int[] numbers;
+    private int target;
+
+    public Calculator() {
+        this.answer = 0;
+    }
+
+    public void updateData(int[] numbers, int target) {
+        this.numbers = numbers;
+        this.target = target;
+    }
+
+    public void dfs(int level, int sum) {
+
+        if (level == this.numbers.length) {
+            if (sum == target) {
+                this.answer++;
+            }
+            return ;
         }
+        dfs(level+1, sum + this.numbers[level]);
+        dfs(level+1, sum - this.numbers[level]);
+    }
+
+    public int getAnswer() {
+        return this.answer;
     }
 }
