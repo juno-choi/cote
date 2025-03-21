@@ -1,10 +1,10 @@
-import kr.co.simol.structure.m42586.Solution;
+import kr.co.simol.dfs.m43165.Solution;
 
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] progresses = {95, 90, 99, 99, 80, 99};
-        int[] speeds = {1, 1, 1, 1, 1, 1};
-        solution.solution(progresses, speeds);
+        int[] numbers = {1, 1, 1, 1, 1};
+        int target = 3;
+        solution.solution(numbers, target);
     }
 }
