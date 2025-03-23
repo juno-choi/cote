@@ -1,4 +1,4 @@
-package kr.co.simol.dfs.m43165;
+package kr.co.simol.programers.dfs.m43165;
 
 /**
  * dfs를 통해 문제를 풀이해야 함.

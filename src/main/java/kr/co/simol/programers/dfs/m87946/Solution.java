@@ -1,4 +1,4 @@
-package kr.co.simol.dfs.m87946;
+package kr.co.simol.programers.dfs.m87946;
 
 public class Solution {
 

@@ -1,4 +1,4 @@
-package kr.co.simol.sort.m42748;
+package kr.co.simol.programers.sort.m42748;
 
 import java.util.*;
 import java.util.stream.Collectors;

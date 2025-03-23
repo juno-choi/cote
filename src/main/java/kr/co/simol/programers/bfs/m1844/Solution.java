@@ -1,4 +1,4 @@
-package kr.co.simol.bfs.m1844;
+package kr.co.simol.programers.bfs.m1844;
 
 import java.util.LinkedList;
 import java.util.Queue;

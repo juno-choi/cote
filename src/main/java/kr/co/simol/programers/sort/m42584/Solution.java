@@ -1,4 +1,4 @@
-package kr.co.simol.practice.test1.m42584;
+package kr.co.simol.programers.sort.m42584;
 
 import java.util.*;
 public class Solution {

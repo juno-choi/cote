@@ -1,4 +1,4 @@
-package kr.co.simol.bfs.study;
+package kr.co.simol.programers.bfs.study;
 
 import java.util.LinkedList;
 import java.util.Queue;

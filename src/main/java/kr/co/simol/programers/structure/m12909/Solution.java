@@ -1,4 +1,4 @@
-package kr.co.simol.structure.m12909;
+package kr.co.simol.programers.structure.m12909;
 import java.util.*;
 
 /**

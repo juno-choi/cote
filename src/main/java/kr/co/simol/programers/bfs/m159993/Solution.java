@@ -1,4 +1,4 @@
-package kr.co.simol.bfs.m159993;
+package kr.co.simol.programers.bfs.m159993;
 
 import java.util.*;
 public class Solution {
