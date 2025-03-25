@@ -84,7 +84,8 @@ class VoteChecker {
         for (String key : keys) {
             int count = this.voteMap.get(key);
             if (count == max) {
-                this.voteList.add(key);            }
+                this.voteList.add(key);
+            }
         }
     }
 
