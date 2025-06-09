@@ -1,9 +1,6 @@
 package kr.co.simol.programers.LRU.m17680;
 
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Stack;
 
 /**
 지도개발팀에서 근무하는 제이지는 지도에서 도시 이름을 검색하면 해당 도시와 관련된 맛집 게시물들을 데이터베이스에서 읽어 보여주는 서비스를 개발하고 있다.
@@ -70,16 +67,8 @@ public class Solution {
 
         public void add(String city) {
             if (this.isHit) {
-                // 위치를 바꾸고 종료
-                List<String> newList = new LinkedList<>();
-                for (String c : this.list) {
-                    if (c.equals(city)) {
-                        continue;
-                    }
-                    newList.add(c);
-                }
-                newList.add(city);
-                this.list = newList;
+                list.remove(list.indexOf(city));
+                list.add(city);
 
                 // isHit 초기화
                 this.isHit = false;
@@ -88,7 +77,7 @@ public class Solution {
 
             if(this.list.size() >= this.size) {
                 // 가장 오래된 값은 버림
-                this.list = this.list.subList(1, this.size);
+                this.list.remove(0);
             }
 
             this.list.add(city);
